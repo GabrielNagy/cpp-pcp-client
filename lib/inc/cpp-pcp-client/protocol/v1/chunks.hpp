@@ -36,7 +36,7 @@ namespace ChunkDescriptor {
 // MessageChunk
 //
 
-struct LIBCPP_PCP_CLIENT_EXPORT MessageChunk {
+struct CPP_PCP_CLIENT_EXPORT MessageChunk {
     uint8_t descriptor;
     uint32_t size;  // [byte]
     std::string content;

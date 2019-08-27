@@ -8,11 +8,11 @@
 
 namespace PCPClient {
 
-LIBCPP_PCP_CLIENT_EXPORT void validatePrivateKeyCertPair(const std::string& key, const std::string& crt);
+CPP_PCP_CLIENT_EXPORT void validatePrivateKeyCertPair(const std::string& key, const std::string& crt);
 
-LIBCPP_PCP_CLIENT_EXPORT std::string getCommonNameFromCert(const std::string& crt);
+CPP_PCP_CLIENT_EXPORT std::string getCommonNameFromCert(const std::string& crt);
 
-class LIBCPP_PCP_CLIENT_EXPORT ClientMetadata {
+class CPP_PCP_CLIENT_EXPORT ClientMetadata {
   public:
     std::string ca;
     std::string crt;

@@ -17,7 +17,7 @@ namespace v2 {
 // Message
 //
 
-class LIBCPP_PCP_CLIENT_EXPORT Message {
+class CPP_PCP_CLIENT_EXPORT Message {
   public:
     // The default ctor is deleted since, for the PCP protocol, a
     // valid message must have an envelope.

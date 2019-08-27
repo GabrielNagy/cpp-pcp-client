@@ -14,7 +14,7 @@ namespace v1 {
 // Associate Session process; consumer code may want to hold a lock
 // over the instance mutex, depending on the usage
 
-struct LIBCPP_PCP_CLIENT_EXPORT SessionAssociation {
+struct CPP_PCP_CLIENT_EXPORT SessionAssociation {
     std::atomic<bool> success;
     std::atomic<bool> in_progress;
     std::atomic<bool> got_messaging_failure;

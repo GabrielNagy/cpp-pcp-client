@@ -15,7 +15,7 @@ namespace PCPClient {
 //
 namespace lth_jc = leatherman::json_container;
 
-struct LIBCPP_PCP_CLIENT_EXPORT ParsedChunks {
+struct CPP_PCP_CLIENT_EXPORT ParsedChunks {
     // Envelope
     lth_jc::JsonContainer envelope;
 

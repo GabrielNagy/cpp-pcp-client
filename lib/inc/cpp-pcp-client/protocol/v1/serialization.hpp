@@ -29,8 +29,8 @@ typedef std::vector<uint8_t> SerializedMessage;
 
 #ifdef BOOST_LITTLE_ENDIAN
 
-LIBCPP_PCP_CLIENT_EXPORT uint32_t getNetworkNumber(const uint32_t& number);
-LIBCPP_PCP_CLIENT_EXPORT uint32_t getHostNumber(const uint32_t& number);
+CPP_PCP_CLIENT_EXPORT uint32_t getNetworkNumber(const uint32_t& number);
+CPP_PCP_CLIENT_EXPORT uint32_t getHostNumber(const uint32_t& number);
 
 #else  // we're using big endian (!)
 

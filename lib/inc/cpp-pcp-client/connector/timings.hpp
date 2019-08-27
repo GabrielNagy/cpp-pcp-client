@@ -13,7 +13,7 @@ namespace PCPClient {
 // ConnectionTimings
 //
 
-struct LIBCPP_PCP_CLIENT_EXPORT ConnectionTimings {
+struct CPP_PCP_CLIENT_EXPORT ConnectionTimings {
     using Duration_us  = boost::chrono::duration<int, boost::micro>;
     using Duration_min = boost::chrono::minutes;
 
@@ -95,7 +95,7 @@ struct LIBCPP_PCP_CLIENT_EXPORT ConnectionTimings {
 // AssociationTimings
 //
 
-struct LIBCPP_PCP_CLIENT_EXPORT AssociationTimings {
+struct CPP_PCP_CLIENT_EXPORT AssociationTimings {
     using Duration_ms  = boost::chrono::duration<int, boost::milli>;
     using Duration_min = boost::chrono::minutes;
 

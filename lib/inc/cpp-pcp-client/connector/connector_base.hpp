@@ -22,7 +22,7 @@ namespace PCPClient {
 // A base class for shared implemention between v1 and v2 connectors.
 //
 
-class LIBCPP_PCP_CLIENT_EXPORT ConnectorBase {
+class CPP_PCP_CLIENT_EXPORT ConnectorBase {
   public:
     using MessageCallback = std::function<void(const ParsedChunks&)>;
 

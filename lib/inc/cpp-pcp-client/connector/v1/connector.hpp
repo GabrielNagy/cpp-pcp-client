@@ -17,7 +17,7 @@ namespace v1 {
 // Connector
 //
 
-class LIBCPP_PCP_CLIENT_EXPORT Connector : public ConnectorBase {
+class CPP_PCP_CLIENT_EXPORT Connector : public ConnectorBase {
   public:
     Connector() = delete;
 

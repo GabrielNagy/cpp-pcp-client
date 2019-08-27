@@ -39,13 +39,13 @@ namespace lth_jc = leatherman::json_container;
 enum class TypeConstraint { Object, Array, String, Int, Bool, Double, Null, Any };
 enum class ContentType { Json, Binary };
 
-class LIBCPP_PCP_CLIENT_EXPORT schema_error : public std::runtime_error  {
+class CPP_PCP_CLIENT_EXPORT schema_error : public std::runtime_error  {
   public:
     explicit schema_error(std::string const& msg)
             : std::runtime_error(msg) {}
 };
 
-class LIBCPP_PCP_CLIENT_EXPORT Schema {
+class CPP_PCP_CLIENT_EXPORT Schema {
   public:
     Schema() = delete;
 

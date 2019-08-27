@@ -39,7 +39,7 @@ add_executable(${test_BIN} ${SOURCES})
 # linking causes segfaults as it picks up the wrong Asio symbols when using
 # Boost.Asio directly in the test, and Boost.Log and libcpp-pcp-client are
 # both dynamic libraries.
-target_link_libraries(${test_BIN} libcpp-pcp-client ${LIBS} ${PLATFORM_LIBS})
+target_link_libraries(${test_BIN} cpp-pcp-client ${LIBS} ${PLATFORM_LIBS})
 
 add_custom_target(check
     "${EXECUTABLE_OUTPUT_PATH}/${test_BIN}"

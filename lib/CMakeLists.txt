@@ -52,19 +52,19 @@ elseif ("${CMAKE_SYSTEM_NAME}" MATCHES "SunOS")
     set(PLATFORM_LIBS socket nsl)
 endif()
 
-add_library(libcpp-pcp-client ${SOURCES})
-set_target_properties(libcpp-pcp-client PROPERTIES VERSION ${PROJECT_VERSION})
+add_library(cpp-pcp-client ${SOURCES})
+set_target_properties(cpp-pcp-client PROPERTIES VERSION ${PROJECT_VERSION})
 
 # Explicit dependency on external projects to ensure they get
 # extracted when building with multiple jobs
-add_dependencies(libcpp-pcp-client websocketpp valijson)
+add_dependencies(cpp-pcp-client websocketpp valijson)
 
-target_link_libraries(libcpp-pcp-client PRIVATE ${LIBS} ${PLATFORM_LIBS})
+target_link_libraries(cpp-pcp-client PRIVATE ${LIBS} ${PLATFORM_LIBS})
 
 # Generate the export header
-symbol_exports(libcpp-pcp-client "${CMAKE_CURRENT_LIST_DIR}/inc/cpp-pcp-client/export.h")
+symbol_exports(cpp-pcp-client "${CMAKE_CURRENT_LIST_DIR}/inc/cpp-pcp-client/export.h")
 
-leatherman_install(libcpp-pcp-client)
+leatherman_install(cpp-pcp-client)
 install(DIRECTORY inc/cpp-pcp-client DESTINATION include)
 
 add_subdirectory(tests)

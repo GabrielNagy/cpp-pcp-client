@@ -88,7 +88,7 @@ using CloseCode = CloseCodeValues::value_;
 // Connection
 //
 
-class LIBCPP_PCP_CLIENT_EXPORT Connection {
+class CPP_PCP_CLIENT_EXPORT Connection {
   public:
     /// To keep track of WebSocket timings
     ConnectionTimings timings;
